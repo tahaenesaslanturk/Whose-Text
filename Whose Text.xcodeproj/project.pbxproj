@@ -13,6 +13,8 @@
 		FE91B5DE2826833B009B734C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE91B5DC2826833B009B734C /* Main.storyboard */; };
 		FE91B5E02826833C009B734C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE91B5DF2826833C009B734C /* Assets.xcassets */; };
 		FE91B5E32826833C009B734C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE91B5E12826833C009B734C /* LaunchScreen.storyboard */; };
+		FEA99F30282687C200DB40D6 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FEA99F2F282687C200DB40D6 /* IQKeyboardManagerSwift */; };
+		FEA99F32282688E600DB40D6 /* WhoseTextClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FEA99F31282688E600DB40D6 /* WhoseTextClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		FE91B5DF2826833C009B734C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE91B5E22826833C009B734C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE91B5E42826833C009B734C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEA99F31282688E600DB40D6 /* WhoseTextClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = WhoseTextClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEA99F30282687C200DB40D6 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 				FE91B5DF2826833C009B734C /* Assets.xcassets */,
 				FE91B5E12826833C009B734C /* LaunchScreen.storyboard */,
 				FE91B5E42826833C009B734C /* Info.plist */,
+				FEA99F31282688E600DB40D6 /* WhoseTextClassifier.mlmodel */,
 			);
 			path = "Whose Text";
 			sourceTree = "<group>";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = "Whose Text";
+			packageProductDependencies = (
+				FEA99F2F282687C200DB40D6 /* IQKeyboardManagerSwift */,
+			);
 			productName = "Whose Text";
 			productReference = FE91B5D32826833B009B734C /* Whose Text.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = FE91B5CA2826833B009B734C;
+			packageReferences = (
+				FEA99F2E282687C200DB40D6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = FE91B5D42826833B009B734C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,6 +152,7 @@
 				FE91B5DB2826833B009B734C /* ViewController.swift in Sources */,
 				FE91B5D72826833B009B734C /* AppDelegate.swift in Sources */,
 				FE91B5D92826833B009B734C /* SceneDelegate.swift in Sources */,
+				FEA99F32282688E600DB40D6 /* WhoseTextClassifier.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FEA99F2E282687C200DB40D6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FEA99F2F282687C200DB40D6 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEA99F2E282687C200DB40D6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FE91B5CB2826833B009B734C /* Project object */;
 }
